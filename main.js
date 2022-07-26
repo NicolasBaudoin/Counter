@@ -9,6 +9,10 @@ const btns = document.querySelectorAll(".btn"); //nodelist
 
 btns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
-    console.log(e.currentTarget);
+    const styles = e.currentTarget.classList;
+    if (styles.contains("decrease")) {
+      count--;
+    }
+    value.textContent = count;
   });
 });
