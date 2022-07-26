@@ -6,7 +6,6 @@ const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn"); //nodelist
 const span = document.querySelector("span");
 //for each on nodelist
-
 btns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const styles = e.currentTarget.classList;
