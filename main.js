@@ -20,11 +20,11 @@ btns.forEach(function (btn) {
     }
     value.textContent = count;
     // change caracters color according to count
-    if (value.textContent < 0) {
+    if (count < 0) {
       span.style.color = "red";
-    } else if (value.textContent == 0) {
+    } else if (count === 0) {
       span.style.color = "black";
-    } else if (value.textContent > 0) {
+    } else if (count > 0) {
       span.style.color = "green";
     }
   });
