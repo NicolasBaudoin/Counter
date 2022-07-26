@@ -12,18 +12,14 @@ btns.forEach(function (btn) {
     const styles = e.currentTarget.classList;
     if (styles.contains("decrease")) {
       count--;
+      span.style.color = "red";
     } else if (styles.contains("increase")) {
       count++;
+      span.style.color = "green";
     } else if (styles.contains("reset")) {
       count = 0;
+      span.style.color = "black";
     }
     value.textContent = count;
-    if (value.textContent < 0) {
-      span.style.color = "red";
-    } else if (value.textContent == 0) {
-      span.style.color = "black";
-    } else if (value.textContent > 0) {
-      span.style.color = "green";
-    }
   });
 });
