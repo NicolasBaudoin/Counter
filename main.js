@@ -12,6 +12,10 @@ btns.forEach(function (btn) {
     const styles = e.currentTarget.classList;
     if (styles.contains("decrease")) {
       count--;
+    } else if (styles.contains("increase")) {
+      count++;
+    } else if (styles.contains("reset")) {
+      count = 0;
     }
     value.textContent = count;
   });
